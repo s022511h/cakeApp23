@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Watson Treats">
+  <title>Watson Treats</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="dark:bg-darkMode-background dark:text-darkMode-text bg-repeat bg-[length:200px_100px]">
+
+  <div>
+    <header class="border-2 border-slate-300 bg-cover bg-no-repeat bg-center h-80 text-center" style="background-image: url('/images/CakeBack.jpg')" alt="colourful cupcakes">
+      <h1 class="font-serif font-bold text-9xl text-white" id="welcomeText">Welcome</h1>
+    </header>
+
+    <nav class="border-4 border-slate-300 sticky top-0 flex items-center justify-between flex-wrap p-10">
+      <div id="mainnav" class="flex items-center justify-center rounded-xl drop-shadow-lg bg-opacity-85 flex-shrink-0 mr-6 border-4 border-black bg-white text-green-600 font-Pacific-cursive underline">
+        <svg height="50px" width="50px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path style="fill:#F2AED0;" d="M350.028,117.021c-9.594-4.506-19.647-7.899-29.985-10.124 c-20.025-31.711-54.79-51.073-92.686-51.073c-60.461,0-109.649,49.188-109.649,109.648c0,1.075,0.017,2.162,0.052,3.256 c-22.704,18.028-36.111,45.603-36.111,74.767c0,9.629,7.806,17.435,17.435,17.435h313.835c9.629,0,17.435-7.806,17.435-17.435 C430.353,189.586,398.824,139.941,350.028,117.021z"></path> <g> <path style="fill:#EE8FBD;" d="M350.028,117.021c-9.594-4.506-19.647-7.899-29.985-10.124 c-14.098-22.326-35.508-38.518-60.168-46.155v200.19h153.043c9.629,0,17.435-7.806,17.435-17.435 C430.353,189.586,398.824,139.941,350.028,117.021z"></path> <path style="fill:#EE8FBD;" d="M256.001,114.119c20.177,0,37.28-13.394,42.898-31.755c-19.555-16.861-44.763-26.54-71.543-26.54 c-4.89,0-9.706,0.327-14.428,0.951c-1.152,3.968-1.783,8.155-1.783,12.489C211.147,93.997,231.268,114.119,256.001,114.119z"></path> </g> <path style="fill:#DE3205;" d="M256.001,0c-24.733,0-44.855,20.123-44.855,44.855s20.123,44.854,44.855,44.854 s44.854-20.121,44.854-44.854S280.734,0,256.001,0z"></path> <path style="fill:#BF2717;" d="M256.001,0v89.709c24.733,0,44.854-20.121,44.854-44.854S280.734,0,256.001,0z"></path> <path style="fill:#7930AC;" d="M449.198,259.1c-3.313-3.994-8.232-6.305-13.421-6.305H76.223c-5.189,0-10.108,2.311-13.421,6.305 c-3.313,3.994-4.674,9.256-3.714,14.355l39.52,209.999c1.551,8.241,8.748,14.211,17.134,14.211h280.514 c8.386,0,15.584-5.97,17.134-14.211l39.52-209.999C453.871,268.356,452.51,263.094,449.198,259.1z"></path> <path style="fill:#6D2B92;" d="M449.198,259.1c-3.313-3.994-8.232-6.305-13.421-6.305H260.665v17.435c-0.005,0-0.01,0-0.015,0 v209.999c0.005,0,0.01,0,0.015,0v17.435h135.592c8.386,0,15.584-5.97,17.134-14.211l39.52-209.999 C453.871,268.356,452.51,263.094,449.198,259.1z"></path> <path style="fill:#9C1457;" d="M413.305,512H105.282c-16.049,0-29.059-13.01-29.059-29.059l0,0h366.141l0,0 C442.364,498.99,429.355,512,413.305,512z"></path> <g> <path style="fill:#9F56CC;" d="M168.258,462.793c4.975,0,9.713-2.125,13.021-5.84c3.308-3.715,4.873-8.667,4.297-13.608 l-16.302-140.258c-1.022-8.791-8.468-15.422-17.318-15.422c-4.975,0-9.713,2.125-13.021,5.84 c-3.308,3.715-4.873,8.667-4.297,13.608l16.303,140.258C151.962,456.163,159.408,462.793,168.258,462.793z"></path> <path style="fill:#9F56CC;" d="M257.163,462.793c9.629,0,17.435-7.806,17.435-17.435V305.101c0-9.629-7.806-17.435-17.435-17.435 c-9.629,0-17.435,7.806-17.435,17.435v140.258C239.728,454.988,247.534,462.793,257.163,462.793z"></path> <path style="fill:#9F56CC;" d="M346.068,462.793c8.85,0,16.296-6.631,17.318-15.422l16.303-140.258 c0.574-4.941-0.989-9.893-4.297-13.608s-8.046-5.84-13.021-5.84c-8.85,0-16.296,6.631-17.318,15.422L328.75,443.346 c-0.574,4.941,0.989,9.893,4.297,13.608C336.356,460.668,341.094,462.793,346.068,462.793z"></path> </g> </g></svg>
+        <span class="m-4 text-4xl tracking-tight mr-10">Watson Treats</span>
+      </div>
+      <div class="flex-grow lg:flex lg:items-center lg:w-auto lg:justify-between lg:space-x-6 ml-10">
+        <a href="index.html" class="text-gray-800 hover:text-green-500 text-4xl lg:ml-0 lg:mr-4">Home</a>
+        <a href="ourShop.html" class="text-gray-800 hover:text-green-500 text-4xl lg:ml-4 lg:mr-4">Our Shop</a>
+        <a href="afternoonTea.html" class="text-gray-800 hover:text-green-500 text-4xl lg:ml-4 lg:mr-4">Afternoon Tea</a>
+        <a href="catering.html" class="text-gray-800 hover:text-green-500 text-4xl lg:ml-4 lg:mr-0">Catering</a>
+      </div>
+      <div>
+        <button id="darkModeToggle" class="flex items-center px-3 py-2 border ml-20 rounded drop-shadow-lg text-gray-800 border-green-500 hover:text-green-500 hover:border-orange-400 hover:bg-slate-900 hover:p-0 hover:drop-shadow-none">
+          Dark Mode
+        </button>
+      </div>
+    </nav>
+
+        <main>
+            <h2 class="m-16">Home</h2>
+            <p class="m-50 p-6 bg-green-200 bg-opacity-60 dark:text-white mx-auto text-center">
+              Welcome to Watson Treats,your go-to destination for delectable treats based near Liverpool!
+              <br>
+              <br>
+              As we embark on an exciting re-launch, we're thrilled to invite you to experience the magic of our charming physical cake shop. 
+            </p>
+            <br>
+
+        
+         
+                <img class="max-w-[600px] mx-auto rounded-4xl shadow-xl p-5 h-auto mb-4" src="images/frontPageimg.jpg" 
+                alt="Shelves of delicious looking cakes">
+
+                <div class="m-16 lg:grid lg:gap-20 lg:grid-cols-2 lg:grid-rows-3 p-5">
+                    <p class=" p-5 rounded bg-green-200 bg-opacity-60">
+                      <br>
+                      <strong> in Irresistible Delights:</strong>
+                      <br>
+                      <br>
+                      Step into Watson Treats and treat yourself to a world of sweet wonders. 
+                      Our shop is a haven for cake enthusiasts, where each slice tells a story of passion and perfection. 
+                      From classic Victoria sponges to indulgent chocolate fudge cakes, 
+                      our confectionery creations are crafted with love and the finest ingredients. 
+                      Explore a symphony of flavors that will tantalize your taste buds and leave you craving for more.
+                    <br>
+                    <br>
+                    </p>
+
+                <img class = "w-full mx-auto rounded-4xl shadow-xl p-5 h-auto" src="images/someCakes.jpg" 
+                alt="A woman standing over an array of cakes">
+                <img class = "w-full mx-auto rounded-4xl shadow-xl p-5 h-auto" src="images/fewMoreCakes.jpg" 
+                alt="Picture of a range of cakes">
+                <p class ="p-5 rounded border-black-6 bg-green-200 bg-opacity-60">
+                  <br>
+                  <strong>Your Experience with Afternoon Tea:</strong>
+                  <br>
+                  <br>
+                  Experience the elegance of a traditional afternoon tea at Watson Treats. 
+                  Immerse yourself in a delightful spread of freshly baked scones, dainty sandwiches, and an assortment of our signature 
+                  pastries. 
+                  <br>
+                  <br>
+                  To make your reservation, simply give us a call –
+                  <br>
+                  <br>
+                  we believe in the personal touch and would love to chat with you directly. 
+                  Elevate your afternoons with the warmth of our cozy ambiance and the exquisite taste of our handmade treats.
+                </p>
+              
+                <p class ="p-5 rounded bg-green-200 bg-opacity-60">
+                  <br>
+                  <strong>Bring the Celebration to You:</strong>
+                  <br>
+                  <br>
+                  Watson Treats isn't just a destination; it's an experience we're thrilled to share with the local community. 
+                  Planning a corporate event or a special celebration? Let us bring the sweetness to you! Our external catering services offer 
+                  a tempting array of cakes and sandwiches that are perfect for any occasion. Impress your clients and colleagues with the finest 
+                  handcrafted delights, expertly delivered and ready to make your event truly memorable.
+                  <br>
+                  <br>
+                  At Watson Treats, we're not just in the business of baking cakes; we're in the business of creating moments that last 
+                  a lifetime. Join us on this exciting journey as we re-launch our beloved cake shop, and let the aroma of freshly baked 
+                  wonders welcome you to a world of pure indulgence. Visit us today and savor the flavor of Watson Treats – 
+                  where every bite is a celebration!
+                </p>
+                <img class = "w-full mx-auto rounded-4xl shadow-xl p-5 h-auto" src="images/weddingCake.jpg" 
+                alt="A picture of a white wedding cake with strawberries on it">
+            </div>
+
+        </main>
+        <br>
+        <br>
+        <footer class= "border-2 border-slate-300">
+          <br>
+            <p> &copy; Andre Simpson s022511h</p><p><script>document.write( new Date().getFullYear() );</script></p>
+            <div class="openingHours">
+              <p><strong>Opening Hours:</strong></p>
+              <p><strong>Monday:</strong> Closed</p>
+              <p><strong>Tuesday to Sunday:</strong> 9 AM - 6 PM</p>
+              <p><strong>Phone:</strong> +1 123 456 7890</p>
+            </div>
+           </footer>
+    </div>
+</body>
+
+<script src="dark.js">
+</script>
+
+
+</html>
